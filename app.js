@@ -50,4 +50,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Check location permission on page load
   checkLocationPermission();
+
+  var load = 0;
+    
+    // sesuaikan id gform dengan id yang ada pada tag iframe di atas
+    document.getElementById('gform').onload = function () {
+        load++;
+        if (load > 1) {
+            // ganti url dibawah dengan url webapp anda
+            document.location = "https://script.google.com/macros/s/AKfycbxaRDgAnax9F60-DjbiNh56nVa-tYNM1zodZCJ_SNj5mBAi18g5UCLr3seh_rY4ggSf3A/exec";
+
+        }
+    }
+
 });
