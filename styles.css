@@ -9,7 +9,11 @@ body {
     background-color: #f0f0f0;
   }
   
-  #content.hidden {
+  #main-content.hidden {
+    display: none;
+  }
+
+  #permission_overlay.hidden {
     display: none;
   }
   
