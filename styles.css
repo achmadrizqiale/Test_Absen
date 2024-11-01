@@ -6,17 +6,6 @@
     display: none;
   }
   
-  .permission_overlay {
-    color: white;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .overlay h2 {
-    margin-bottom: 10px;
-  }
-  
   button {
     padding: 10px 20px;
     font-size: 16px;
