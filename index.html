@@ -7,14 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Absen</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- ganti src url dengan url form anda -->
     <div id="permission_overlay" class="permission_overlay">
-        <h2>Location Access Required</h2>
-        <p>Please allow location access to proceed.</p>
-        <button id="retry">Retry</button>
+        <div class="row warning">
+            <div class="col">
+                <i class="ph ph-warning"></i>
+                <h2 class="forum-regular">Location Access Required</h2>
+            </div>   
+        </div>
+        <p class="source-sans-3-fonts">Please allow location access to proceed.</p>
+        <button id="retry" class="retry-button source-sans-3-fonts">Retry</button>
     </div>
     
     <div id="main_content">
@@ -27,5 +37,6 @@
     <script src="app.js"></script>
     </script>
 </body>
+
 
 </html>

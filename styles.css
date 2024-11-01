@@ -1,3 +1,23 @@
+  body {
+    background-color: #F8F9FF; /* Very light purple-tinted white */
+    /* or */
+    background-color: #FAFAFA; /* Light gray */
+  }
+
+  .permission_overlay {
+    /* Assuming you want a centered overlay */
+    padding: 24px;
+    text-align: center;
+  }
+
+  .row.warning .col {
+      /* Make the container flex to align items horizontally */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px; /* Space between icon and text */
+  }
+  
   #main-content.hidden {
     display: none;
   }
@@ -12,8 +32,46 @@
     text-align: center;
   }
   
-  button {
-    padding: 10px 20px;
+  .retry-button {
+    background: linear-gradient(to right, #9499ff, #9c66f9);
+    color: white;
+    border: none;
+    padding: 4px 24px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    font-family: system-ui, -apple-system, sans-serif;
     font-size: 16px;
+    font-weight: 500;
     cursor: pointer;
+    transition: opacity 0.2s ease;
   }
+
+  .retry-button:hover {
+    opacity: 0.9;
+  }
+
+  .retry-button:active {
+    transform: scale(0.98);
+  }
+
+  .forum-regular {
+    font-family: "Forum", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .source-sans-3-fonts {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .ph-warning {
+    /* Style the icon */
+    font-size: 24px; /* Adjust size as needed */
+    color: #FF9800; /* Warning color - adjust as needed */
+}
+
+  
+  
