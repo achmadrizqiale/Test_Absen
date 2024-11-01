@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
       (position) => {
         // Hide the overlay and display content on success
         overlay.classList.add('hidden');
-        content.classList.remove('hidden');
       },
       (error) => {
         // On error, show an appropriate message
@@ -42,7 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
   function showOverlay(message) {
     overlay.querySelector('p').textContent = message;
     overlay.classList.remove('hidden');
-    content.classList.add('hidden');
   }
 
   // Attach event listener to the Retry button
